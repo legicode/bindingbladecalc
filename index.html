@@ -9,7 +9,7 @@
 	<body>
 		<table id="main">
 			<tr><td class="intro">
-				<b><u>Average stats calculator for Fire Emblem: The Binding Blade.</u></b><br />
+				<h3>Average stats calculator for Fire Emblem: The Binding Blade.</h3>
 				Supports the Fixed Growths mod in <a href="https://www.romhacking.net/hacks/6489/">Binding Blade Plus</a> by Mkol103. These will be slightly different from the true averages due to some specifics in how the calculation formula works.<br /><br />
 				Developed by <a href="https://bsky.app/profile/homestar.bsky.social">legi</a>. Feel free to message suggestions or ideas.
 			</td></tr>
@@ -18,16 +18,16 @@
 				<h2>True hit calculator</h2>
 				Displayed hit rate: 
 				<select id="displayedHit" onChange="updateHit()"></select> &nbsp&nbsp
-				True hit rate: <b><span id="trueHit"></span></b><br/>
+				True hit rate: <b><span id="trueHit"></span></b><br />
 			</td></tr>
 
 			<tr><td class="calculator">
 				<h2>EXP calculator</h2>
-				<u><i>Level entry is calculated from a range of 1 to 40, adding 20 to displayed level if unit is promoted.</i></u><br/><br/>
+				<u><i>Level entry is calculated from a range of 1 to 40, adding 20 to displayed level if unit is promoted.</i></u><br /><br />
 				Player level: 
 				<select id="playerLevel" onChange="updateEXP()"></select> &nbsp&nbsp
 				Enemy level: 
-				<select id="enemyLevel" onChange="updateEXP()"></select><br/><br/>
+				<select id="enemyLevel" onChange="updateEXP()"></select><br /><br />
 				Player class: <select id="playerType" onChange="updateEXP()">
 					<option value="unpromoted">Standard unpromoted</option>
 					<option value="promoted">Standard promoted</option>
@@ -42,11 +42,11 @@
 					<option value="support">Soldier/Base healer</option>
 					<option value="promosupport">Bishop/Valkyrie</option>
 					<option value="finalboss">King/Demon Dragon</option>
-				</select><br/><br/>
+				</select><br /><br />
 				&nbsp&nbsp&nbsp&nbsp
 				Enemy killed: <input type="checkbox" id="killEXP" onChange="updateEXP()"> &nbsp
 				Boss: <input type="checkbox" id="bossEXP" onChange="updateEXP()"> &nbsp&nbsp&nbsp <br /><br />
-				Experience: <b><span id="exp"></span></b><br/>
+				Experience: <b><span id="exp"></span></b><br />
 			</td></tr>
 
 			<tr><td class="table">
